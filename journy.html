@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Journey 💑</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 40px;
+      color: #d6336c;
+      font-size: 2.2rem;
+    }
+
+    .timeline {
+      margin: 30px auto;
+      max-width: 90%;
+    }
+
+    .event {
+      background: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      animation: fadeInUp 1s ease;
+    }
+
+    .event h2 {
+      margin-bottom: 10px;
+      color: #ff5c8a;
+    }
+
+    .event p {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 10px;
+      margin: 30px 0;
+    }
+
+    .nav-btn {
+      background-color: #d6336c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: #b30047;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Journey Together 🚀</h1>
+  <div class="timeline">
+    <div class="event">
+      <h2>🌟 The First Hello</h2>
+      <p>The day we met was like magic. You smiled, and my world changed forever.</p>
+    </div>
+    <div class="event">
+      <h2>❤️ First Date</h2>
+      <p>That day felt like a dream. Every laugh, every word—we just clicked so perfectly.</p>
+    </div>
+    <div class="event">
+      <h2>🌸 Our Growing Bond</h2>
+      <p>Through every up and down, we’ve grown stronger and more in love.</p>
+    </div>
+    <div class="event">
+      <h2>💖 Today</h2>
+      <p>We’re here now, cherishing every moment, writing this beautiful love story together.</p>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button class="nav-btn" onclick="window.location.href='latter.html'">⬅️ Back</button>
+    <button class="nav-btn" onclick="window.location.href='promise.html'">Next ➡️</button>
+  </div>
+</body>
+</html>

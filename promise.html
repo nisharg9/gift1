@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>10 Romantic Promises</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe6e6, #ffb3b3);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 30px 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #b30059;
+      margin-bottom: 20px;
+    }
+
+    .promise-list {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 1.8;
+      background: #fff8f8;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      list-style: none;
+      counter-reset: promise;
+    }
+
+    .promise-list li {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s forwards;
+      animation-delay: calc(0.2s * var(--i));
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .promise-list li::before {
+      counter-increment: promise;
+      content: counter(promise) ".";
+      position: absolute;
+      left: 0;
+      color: #b30059;
+      font-weight: bold;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    button {
+      background-color: #b30059;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #cc0066;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+      .promise-list {
+        font-size: 18px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 10 Promises to You 💖</h1>
+
+  <ul class="promise-list">
+    <li style="--i:1">🎯 I promise to always be your biggest supporter.</li>
+    <li style="--i:2">💌 I promise to never let a day pass without telling you I love you.</li>
+    <li style="--i:3">👂 I promise to listen—not just to your words, but to your heart.</li>
+    <li style="--i:4">🌱 I promise to grow with you, not away from you.</li>
+    <li style="--i:5">😂 I promise to laugh with you in good times and hold you in bad.</li>
+    <li style="--i:6">🌈 I promise to cherish your quirks and never change who you are.</li>
+    <li style="--i:7">🏡 I promise to build a future with you, brick by brick, dream by dream.</li>
+    <li style="--i:8">🧡 I promise to be honest, even when the truth is hard.</li>
+    <li style="--i:9">🛡️ I promise to protect our love fiercely, no matter what.</li>
+    <li style="--i:10">🔁 I promise to choose you, every single day, without pause or doubt.</li>
+  </ul>
+
+  <div class="buttons">
+      <button class="back-btn" onclick="window.location.href='journy.html'">⬅️ Back to Home</button>
+    <button class="back-btn" onclick="window.location.href='last.html'">➡️Next Page</button>
+  </div>
+  </div>
+
+</body>
+</html>

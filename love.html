@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Heer 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      animation: bgMove 10s infinite alternate;
+      overflow: hidden;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 90%;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0 10px 20px;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      color: red;
+      animation: heartbeat 1s infinite;
+      margin-top: 10px;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+
+    .btn {
+      background: #ff4d6d;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(255, 77, 109, 0.4);
+      transition: background 0.3s, transform 0.2s;
+      margin: 10px;
+    }
+
+    .btn:hover {
+      background: #ff1f50;
+      transform: translateY(-3px);
+    }
+
+    .quote {
+      margin-top: 15px;
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 1s;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="1000056435.png" alt="Nisharg and Heer">
+    <h1>To Heer, My Heartbeat ❤️</h1>
+    <p>
+      Tere bina sab kuch adhoora lagta hai,<br>
+      Muskuraata hoon toh wajah sirf tum hoti ho.<br><br>
+      Tumhari har ek muskaan, meri duniya ban gayi hai.<br>
+      Main hamesha tumhare saath hoon, har pal, har saans mein.
+    </p>
+    <div class="heart">❤️</div>
+    <button class="btn" onclick="showLove()">Click for a Surprise 💌</button>
+    <button class="btn" onclick="location.href='latter.html'">Next Page ➡️</button>
+    <p class="quote" id="quote"></p>
+  </div>
+
+  <script>
+    const quotes = [
+      "You are my today and all of my tomorrows.",
+      "Your smile is the spark that lights up my world.",
+      "I didn’t believe in magic until I met you.",
+      "Every love story is beautiful, but ours is my favorite.",
+      "You’re not my number one. You’re my only one."
+    ];
+
+    function showLove() {
+      const quoteEl = document.getElementById('quote');
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      quoteEl.textContent = randomQuote;
+      quoteEl.style.opacity = 1;
+    }
+  </script>
+</body>
+</html>
